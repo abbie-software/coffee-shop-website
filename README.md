@@ -1,40 +1,27 @@
-## Hi there 👋
-welcome to my website
-this is my first commitment
-<!--
-**abbie-software/abbie-software** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# 👋 Hi, I'm Abbie!
 
-Here are some ideas to get you started:
+I am an **aspiring Software Developer** currently focusing on building clean, functional frontend experiences and exploring the world of data. I love turning complex problems into simple, beautiful code.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-# ☕ Abbie's Coffee House
+---
 
-Welcome to the digital home of **Abbie's Coffee House**! This is a frontend web project built to showcase a cozy, modern coffee shop experience.
+### 🚀 What I'm Working On
+* ☕ **[Abbie's Coffee House](https://abbie-software.github.io/coffee-shop-website/)**: A cozy, interactive frontend project built with HTML and CSS.
+* 🏥 **Hospital Management System**: Designing structured database schemas and ER-diagrams.
+* 🌱 Learning **JavaScript, React, and TypeScript** to build more dynamic web apps.
 
-## 🚀 Live Demo
-You can view the live website here: 
-[https://abbie-software.github.io/coffee-shop-website/coffee.html](https://abbie-software.github.io/coffee-shop-website/coffee.html)
+---
 
-## ✨ Features
-* **Modern Menu:** A clean list of our best brews and pastries.
-* **Responsive Design:** Looks great on both desktop and mobile.
-* **Cozy Aesthetic:** Uses a warm color palette to match the coffee vibe.
+### 🛠️ My Toolbox
+* **Frontend:** HTML5, CSS3, JavaScript (Learning)
+* **Tools:** Cursor, VS Code, Git & GitHub, PowerShell
+* **Databases:** Microsoft Access, Database Design (ER-Diagrams)
 
-## 🛠️ Technologies Used
-* **HTML5:** For the structure of the site.
-* **CSS3:** For the styling and layout.
-* **GitHub Pages:** For hosting the live site.
+---
 
-## 📸 Screenshots
-*(Coming soon!)*
+### 📫 Let's Connect!
+* Check out my repositories below to see my progress!
+* [Insert your LinkedIn or Twitter link if you have one]
 
-## 👩‍💻 About the Developer
-I'm Abbie, a budding software developer learning the ropes of Git, GitHub, and Frontend web development!
+---
+
+![Abbie's GitHub Stats](https://github-readme-stats.vercel.app/api?abbie-software&show_icons=true&theme=radical)
