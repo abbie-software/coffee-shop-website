@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abbie's Coffee House</title>
+    <a href="#" class="order-btn">Order Now</a>
     <style>
         body {
             font-family: 'Georgia', serif;
@@ -29,6 +30,42 @@
             border-radius: 10px;
         }
     </style>
+    <style>
+        .hero-img {
+            width: 100vw;
+            max-width: 100%;
+            height: 380px;
+            object-fit: cover;
+            display: block;
+            margin-left: calc(50% - 50vw);
+            margin-right: calc(50% - 50vw);
+        }
+        @media (max-width: 600px) {
+            .hero-img {
+                height: 200px;
+            }
+        }
+        .order-btn {
+    background-color: #6f4e37; /* Coffee Brown */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none; /* Removes the underline */
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    transition: all 0.3s ease; /* This makes the change smooth, not instant! */
+}
+.order-btn:hover {
+    background-color: #4b3621; /* Darker brown on hover */
+    transform: translateY(-3px); /* Lifts the button up slightly */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Adds a shadow for a 3D effect */
+}
+    </style>
+    <img 
+        class="hero-img" 
+        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80" 
+        alt="A beautiful coffee cup on a table, cozy coffee vibe."
+    />
 </head>
 <body>
 
@@ -53,6 +90,26 @@
                 <p>500ksh</p>
             </div>
         </div>
+    </section>
+    <section id="menu">
+        <h2>Daily Brews</h2>
+        <table>
+            <tr>
+                <th>Drink</th>
+                <th>Size</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Caramel Macchiato</td>
+                <td>Large</td>
+                <td>$5.50</td>
+            </tr>
+            <tr>
+                <td>Cold Brew</td>
+                <td>Medium</td>
+                <td>$4.00</td>
+            </tr>
+        </table>
     </section>
 
 </body>
