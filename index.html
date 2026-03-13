@@ -3,16 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Abbie's Coffee House</title>
+    <a href="#" class="order-btn">Order Now</a>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fdf5e6; /* Creamy color */
+            color: #4b3621; /* Coffee brown */
+            margin: 0;
+            text-align: center;
+        }
+        .coffee-menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem 1rem;
+            background-color: rgba(255, 255, 255, 0.28); /* semi-transparent white */
+            border-radius: 16px;
+            margin: 2rem auto;
+            max-width: 1100px;
+            box-shadow: 0 8px 24px rgba(111, 78, 55, 0.05);
+            backdrop-filter: blur(12px); /* glassmorphism blur */
+            -webkit-backdrop-filter: blur(12px); /* Safari support */
+            border: 1.5px solid rgba(255,255,255,0.48); /* thin white border */
+        }
+
+        .menu-category {
+            background-color: rgba(255, 255, 255, 0.42); /* semi-transparent white */
+            border-radius: 12px;
+            padding: 1.5rem 1rem;
+            box-shadow: 0 2px 8px rgba(111, 78, 55, 0.13);
+            backdrop-filter: blur(8px); /* glassmorphism blur */
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255,255,255,0.34); /* thin white border */
+        }
+
+        .menu-category h3 {
+            font-family: 'Georgia', serif;
+            color: #6f4e37;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.3rem;
+            border-bottom: 2px solid #e6ccb2;
+            display: inline-block;
+            padding-bottom: .3rem;
+        }
+
+        .menu-items {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .menu-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-header {
+          display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .item-name {
+            font-weight: bold;
+            color: #4b3621;
+            font-size: 1.12rem;
+            font-family: 'Georgia', serif;
+        }
+
+        .item-price {
+            color: #6f4e37;
+            font-weight: 600;
+            font-size: 1rem;
+            margin-left: 1rem;
+        }
+
+        .item-desc {
+            color: #7c6143;
+            font-size: 0.95rem;
+            margin-top: 0.25rem;
+            font-family: 'Georgia', serif;
+        }
+
+        @media (max-width: 850px) {
+            .coffee-menu {
+                grid-template-columns: 1fr;
+            }
+     }
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .item {
+            border: 2px solid #6f4e37;
+            padding: 15px;
+            border-radius: 10px;
+        }
+    </style>
+    <style>
+        .hero-img {
+            width: 100vw;
+            max-width: 100%;
+            height: 380px;
+            object-fit: cover;
+            display: block;
+            margin-left: calc(50% - 50vw);
+            margin-right: calc(50% - 50vw);
+        }
+        @media (max-width: 600px) {
+            .hero-img {
+                height: 200px;
+            }
+        }
+        .order-btn {
+    background-color: #6f4e37; /* Coffee Brown */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none; /* Removes the underline */
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    transition: all 0.3s ease; /* This makes the change smooth, not instant! */
+}
+.order-btn:hover {
+    background-color: #4b3621; /* Darker brown on hover */
+    transform: translateY(-3px); /* Lifts the button up slightly */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Adds a shadow for a 3D effect */
+}
+    </style>
+    <img 
+        class="hero-img" 
+        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80" 
+        alt="A beautiful coffee cup on a table, cozy coffee vibe."
+    />
 </head>
 <body>
-    <ul>
-        <li>Reading</li>
-        <li>Cycling</li>
-        <li>Cooking</li>
-    </ul>
-    <h2> today i learned how to use git!</h2>
-    <p> learning how to use git is fun</p>
-    <p style="color: red;"> this is a red paragraph</p>
+
+    <header>
+        <h1>☕ Abbie's Coffee House</h1>
+        <p>The best beans in town.</p>
+    </header>
+
+    <section>
+        <h2>Our Menu</h2>
+        <div class="menu">
+            <div class="item">
+                <h3>Espresso</h3>
+                <p>300ksh</p>
+            </div>
+            <div class="item">
+                <h3>Cappuccino</h3>
+                <p>450ksh</p>
+            </div>
+            <div class="item">
+                <h3>Latte</h3>
+                <p>500ksh</p>
+            </div>
+        </div>
+    </section>
+    <section id="menu">
+        <h2>Daily Brews</h2>
+        <table>
+            <tr>
+                <th>Drink</th>
+                <th>Size</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Caramel Macchiato</td>
+                <td>Large</td>
+                <td>$5.50</td>
+            </tr>
+            <tr>
+                <td>Cold Brew</td>
+                <td>Medium</td>
+                <td>$4.00</td>
+            </tr>
+        </table>
+    </section>
+
 </body>
 </html>
