@@ -13,54 +13,83 @@
             margin: 0;
             text-align: center;
         }
-        .hero-section {
-            position: relative;
-            width: 100vw;
-            max-width: 100%;
-            height: 400px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;header {
-            background-color: #6f4e37;
-            color: white;
-            padding: 2rem;
-            justify-content: center;
-            overflow: hidden;
-            margin-left: calc(50% - 50vw);
-            margin-right: calc(50% - 50vw);
+        .coffee-menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem 1rem;
+            background-color: #fff8f0;
+            border-radius: 16px;
+            margin: 2rem auto;
+            max-width: 1100px;
+            box-shadow: 0 8px 24px rgba(111, 78, 55, 0.05);
         }
 
-        .hero-section::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');
-            background-size: cover;
-            background-position: center;
-            filter: brightness(0.5);
-            z-index: 0;
+        .menu-category {
+            background-color: #fdf5e6;
+            border-radius: 12px;
+            padding: 1.5rem 1rem;
+            box-shadow: 0 2px 8px rgba(111, 78, 55, 0.13);
         }
 
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            color: #fff;
-            text-align: center;
-        }
-
-        .hero-content h1 {
-            font-size: 2.8rem;
-            margin-bottom: 1rem;
-            letter-spacing: 2px;
+        .menu-category h3 {
             font-family: 'Georgia', serif;
-            text-shadow: 0 4px 14px rgba(0,0,0,0.45);
+            color: #6f4e37;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.3rem;
+            border-bottom: 2px solid #e6ccb2;
+            display: inline-block;
+            padding-bottom: .3rem;
         }
 
-        .hero-content p {
-            font-size: 1.3rem;
-            font-weight: 400;
-            text-shadow: 0 2px 8px rgba(0,0,0,0.35);
+        .menu-items {
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
+
+        .menu-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .menu-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-header {
+          display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .item-name {
+            font-weight: bold;
+            color: #4b3621;
+            font-size: 1.12rem;
+            font-family: 'Georgia', serif;
+        }
+
+        .item-price {
+            color: #6f4e37;
+            font-weight: 600;
+            font-size: 1rem;
+            margin-left: 1rem;
+        }
+
+        .item-desc {
+            color: #7c6143;
+            font-size: 0.95rem;
+            margin-top: 0.25rem;
+            font-family: 'Georgia', serif;
+        }
+
+        @media (max-width: 850px) {
+            .coffee-menu {
+                grid-template-columns: 1fr;
+            }
+     }
         }
         .menu {
             display: flex;
