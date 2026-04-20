@@ -1,14 +1,23 @@
-
-import heroImg from './assets/hero.png'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/Navbar'
+import HomePage from './pages/HomePage'
+import MenuPage from './pages/MenuPage'
+import AboutPage from './pages/AboutPage'
+import ContactPage from './pages/ContactPage'
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Navbar />
-      <h1>Welcome to the Shop</h1>
-    </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/menu" element={<MenuPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
+
 export default App
