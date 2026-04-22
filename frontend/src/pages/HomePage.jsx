@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import heroImg from '../assets/hero.png'
+import AnimatedTitle from '../components/AnimatedTitle'
 import './HomePage.css'
 
 const featuredItems = [
@@ -11,6 +12,7 @@ const featuredItems = [
 function HomePage() {
   return (
     <main>
+      <AnimatedTitle />
 
       <section className="hero">
         <img src={heroImg} alt="Abbie's Coffee House" className="hero-img" />

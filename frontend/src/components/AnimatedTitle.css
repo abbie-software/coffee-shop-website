@@ -1,0 +1,76 @@
+.animated-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #fdf6f0 0%, #f5e6d3 100%);
+  text-align: center;
+}
+
+.animated-title {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: #2b1b17;
+  letter-spacing: 2px;
+  font-family: 'Georgia', serif;
+}
+
+.letter {
+  display: inline-block;
+  animation: fadeInScale 0.6s ease-out forwards;
+  transform-origin: center;
+}
+
+.letter.space {
+  width: 10px;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translateY(20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animated-title:hover .letter {
+  animation: hoverBounce 0.5s ease-in-out forwards;
+}
+
+@keyframes hoverBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .animated-title {
+    font-size: 36px;
+  }
+
+  .animated-title-container {
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .animated-title {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+
+  .animated-title-container {
+    padding: 20px 10px;
+  }
+}
