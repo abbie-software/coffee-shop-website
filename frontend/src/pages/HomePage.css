@@ -1,0 +1,147 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero-overlay h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.hero-overlay p {
+  font-size: 18px;
+  margin-bottom: 28px;
+  color: #e8d8cc;
+}
+
+.hero-btn {
+  background: #2b1b17;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.hero-btn:hover {
+  background: #4a3228;
+}
+
+.featured {
+  padding: 64px 40px;
+  text-align: center;
+  background: #fdf6f0;
+}
+
+.featured h2 {
+  font-size: 32px;
+  color: #2b1b17;
+  margin-bottom: 8px;
+}
+
+.section-subtitle {
+  color: #8a7060;
+  margin-bottom: 40px;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.menu-card {
+  background: white;
+  border: 1px solid #e8ddd8;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: left;
+}
+
+.menu-card h3 {
+  font-size: 17px;
+  color: #2b1b17;
+  margin-bottom: 8px;
+}
+
+.menu-card p {
+  font-size: 14px;
+  color: #8a7060;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: 600;
+  color: #a0522d;
+}
+
+.see-more {
+  display: inline-block;
+  margin-top: 32px;
+  color: #2b1b17;
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 1px solid #2b1b17;
+  padding-bottom: 2px;
+}
+
+.find-us {
+  padding: 64px 40px;
+  background: white;
+}
+
+.find-us h2 {
+  font-size: 32px;
+  color: #2b1b17;
+  margin-bottom: 32px;
+}
+
+.find-us-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  max-width: 900px;
+}
+
+.find-us-info p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #4a3228;
+  margin-bottom: 20px;
+}
+
+.map-placeholder {
+  background: #f0e8e0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  color: #8a7060;
+  font-size: 14px;
+}
