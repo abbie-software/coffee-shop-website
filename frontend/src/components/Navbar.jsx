@@ -1,10 +1,15 @@
+import { Link } from 'react-router-dom'
+import './Navbar.css'
+
 function Navbar() {
   return (
-    <nav style={{ display: 'flex', justifyContent: 'space-between', padding: '20px', background: '#2b1b17', color: 'white' }}>
+    <nav className="navbar">
       <h2>Espresso Express</h2>
-      <ul>
-        <li style={{ display: 'inline', margin: '0 10px' }}>Menu</li>
-        <li style={{ display: 'inline', margin: '0 10px' }}>About</li>
+      <ul className="nav-links">
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/menu">Menu</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
       </ul>
     </nav>
   );
